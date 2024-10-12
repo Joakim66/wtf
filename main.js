@@ -61,14 +61,14 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('cool_room.png');
+const spaceTexture = new THREE.TextureLoader().load('assets/cool_room.png');
 scene.background = spaceTexture;
 
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('crazy.png');
-const torgiirTexture = new THREE.TextureLoader().load("fucker.png")
+const jeffTexture = new THREE.TextureLoader().load('assets/crazy.png');
+const torgiirTexture = new THREE.TextureLoader().load("assets/fucker.png")
 
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
@@ -78,7 +78,7 @@ scene.add(jeff, torgiir);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('killer.png');
+const moonTexture = new THREE.TextureLoader().load('assets/killer.png');
 
 const moon = new THREE.Mesh(
   new THREE.BoxGeometry( 5, 3, 5, 16 ),
@@ -98,7 +98,7 @@ let mixer;
 let guy
 loader.load(
 	// resource URL
-	'Adventurer.glb',
+	'assets/Adventurer.glb',
 	// called when the resource is loaded
 
 	function ( gltf ) {
@@ -141,7 +141,7 @@ let guy2
 let mixer2
 loader.load(
 	// resource URL
-	'Man.glb',
+	'assets/Man.glb',
 	// called when the resource is loaded
 
 	function ( gltf ) {
@@ -181,7 +181,7 @@ let guy3
 let mixer3
 loader.load(
 	// resource URL
-	'gnome.glb',
+	'assets/gnome.glb',
 	// called when the resource is loaded
 
 	function ( gltf ) {
