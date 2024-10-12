@@ -50,6 +50,7 @@ canvas {
     font-size: 2.5rem;
     padding: 2rem;
     margin-bottom: var(--spacing);
+    grid-column: 2 / 5;
   }
 
   section {
