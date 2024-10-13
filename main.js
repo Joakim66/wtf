@@ -61,7 +61,7 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('assets/cool_room.png');
+const spaceTexture = new THREE.TextureLoader().load('cool_room.png');
 scene.background = spaceTexture;
 
 
